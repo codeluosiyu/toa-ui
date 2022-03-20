@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 
 function App() {
   const a = "123"
@@ -8,7 +7,7 @@ function App() {
   }
   return (
     <div className="App">
-
+      toa-react
     </div>
   );
 }
