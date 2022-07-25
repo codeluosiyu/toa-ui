@@ -1,0 +1,7 @@
+#
+packages:
+  - 'packages/**'
+  - '!packages/__mocks__'
+  - docs
+  - '!**/__tests__/**'
+  
