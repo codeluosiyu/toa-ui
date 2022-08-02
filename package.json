@@ -1,50 +1,101 @@
 {
-  "name": "toa-ui",
-  "packageManager": "pnpm@6.15.1",
-  "description": "toa-ui-components",
+  "name": "toa",
   "version": "1.0.0",
-  "keywords": [
-    "Web components",
-    "Vue3",
-    "React",
-    "Angular"
-  ],
-  "devDependencies": {
-    "@commitlint/cli": "^16.1.0",
-    "commitizen": "^4.2.4",
-    "commitlint-config-cz": "^0.13.2",
-    "cz-customizable": "^6.3.0",
-    "dumi": "^1.1.40",
-    "husky": "^1.2.0",
-    "lerna": "^4.0.0",
-    "prettier": "^2.4.1",
-    "pretty-quick": "^3.1.1",
-    "standard-version": "^9.3.2",
-    "yorkie": "^2.0.0"
+  "description": "",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "dev": "dumi dev",
+    "build": "npm run clean && npm run build:types && gulp",
+    "build:site": "rimraf doc-site && dumi build",
+    "build:types": "tsc -p tsconfig.build.json && cpr lib esm",
+    "clean": "rimraf lib esm dist",
+    "commit": "git-cz",
+    "module": "esm/index.js",
+    "deploy:site": "npm run build:site && gh-pages -d doc-site",
+    "preview:site": "cross-env SITE_BUILD_ENV=PREVIEW npm run build:site && serve doc-site",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:update": "jest --updateSnapshot",
+    "new": "plop --plopfile ./scripts/plopfile.ts",
+    "release": "ts-node ./scripts/release.ts"
   },
+  "sideEffects": [
+    "dist/*",
+    "esm/**/style/*",
+    "lib/**/style/*",
+    "*.less"
+  ],
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -e -V"
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
-  "scripts": {
-    "commit": "git cz",
-    "release": "standard-version",
-    "start:components": "lerna exec npm run start --scope=@sten-design/components",
-    "generate:components": "lerna exec npm run generate --scope=@sten-design/components",
-    "prepatch": "lerna version prepatch"
+  "lint-staged": {
+    "src/**/*.ts?(x)": [
+      "prettier --write",
+      "eslint --fix",
+      "jest --bail --findRelatedTests",
+      "git add"
+    ],
+    "src/**/*.less": [
+      "stylelint --syntax less --fix",
+      "git add"
+    ]
   },
   "config": {
     "commitizen": {
-      "path": "cz-customizable"
+      "path": "cz-conventional-changelog"
     }
   },
-  "workspaces": [
-    "packages/*"
-  ],
-  "standard-version": {
-    "skip": {
-      "tags": true
-    }
+  "dependencies": {
+    "@babel/runtime": "^7.18.9",
+    "@testing-library/user-event": "^14.3.0",
+    "cpr": "^3.0.1",
+    "jest-environment-jsdom": "^28.1.3",
+    "plop": "2.6.0",
+    "prop-types": "^15.8.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.10",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.18.10",
+    "@babel/preset-env": "^7.18.10",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@types/jest": "^28.1.6",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@types/testing-library__react": "^10.2.0",
+    "@umijs/fabric": "^3.0.0",
+    "commitizen": "^4.2.5",
+    "cross-env": "^7.0.3",
+    "cz-conventional-changelog": "^3.3.0",
+    "dumi": "^1.1.46",
+    "gh-pages": "^4.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cssnano": "^2.1.3",
+    "gulp-less": "^5.0.0",
+    "husky": "^8.0.1",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^28.1.3",
+    "lint-staged": "^13.0.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "serve": "^14.0.1",
+    "through2": "^4.0.2",
+    "ts-jest": "^28.0.7",
+    "typescript": "^4.7.4"
   }
 }
