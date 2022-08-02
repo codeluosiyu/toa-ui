@@ -1,0 +1,52 @@
+{
+  "menus": {
+    "en-US": {
+      "/alert": [
+        {
+          "title": "反馈",
+          "meta": {
+            "order": 1,
+            "__fallback": true
+          },
+          "children": [
+            {
+              "path": "/alert",
+              "title": "Alert 警告提示",
+              "meta": {}
+            }
+          ]
+        }
+      ],
+      "*": [
+        {
+          "path": "/",
+          "title": "Toa UI",
+          "meta": {}
+        }
+      ]
+    }
+  },
+  "locales": [
+    {
+      "name": "en-US",
+      "label": "English"
+    }
+  ],
+  "navs": {
+    "en-US": [
+      {
+        "title": "组件",
+        "order": 2,
+        "path": "/alert"
+      }
+    ]
+  },
+  "title": "Happy UI",
+  "mode": "site",
+  "repository": {
+    "url": "",
+    "branch": "master"
+  },
+  "theme": {},
+  "exportStatic": {}
+}
