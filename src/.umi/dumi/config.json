@@ -1,17 +1,32 @@
 {
   "menus": {
     "en-US": {
-      "/alert": [
+      "/components": [
         {
-          "title": "反馈",
+          "title": "基础组件",
           "meta": {
             "order": 1,
             "__fallback": true
           },
           "children": [
             {
-              "path": "/alert",
+              "path": "/components/alert",
               "title": "Alert 警告提示",
+              "meta": {}
+            },
+            {
+              "path": "/components/button",
+              "title": "Button 按钮组件",
+              "meta": {}
+            },
+            {
+              "path": "/components/image",
+              "title": "Image 图片组件",
+              "meta": {}
+            },
+            {
+              "path": "/components/scroll",
+              "title": "Scroll Scroll",
               "meta": {}
             }
           ]
@@ -37,11 +52,11 @@
       {
         "title": "组件",
         "order": 2,
-        "path": "/alert"
+        "path": "/components"
       }
     ]
   },
-  "title": "Happy UI",
+  "title": "Toa UI",
   "mode": "site",
   "repository": {
     "url": "",

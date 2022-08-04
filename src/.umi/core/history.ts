@@ -2,7 +2,7 @@
 import { createBrowserHistory, History } from 'F:/github/new_components/toa/node_modules/umi/node_modules/@umijs/runtime';
 
 let options = {
-  "basename": "/react-ui-library-tutorial"
+  "basename": "/toa-ui"
 };
 if ((<any>window).routerBase) {
   options.basename = (<any>window).routerBase;

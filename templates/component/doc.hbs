@@ -1,13 +1,10 @@
 ---
-name: {{pascalCase name}} {{CN}}
+title: {{pascalCase name}} {{CN}}
 route: /components/{{kebabCase name}}
-menu: 组件
+group:
+  title: 基础组件
+  order: 1
 ---
-
-import CodeBox from '../../doc-comps/happy-box';
-
-import BasicDemo from './demo/basic';
-import BasicDemoCode from '!raw-loader!./demo/basic';
 
 ## {{pascalCase name}} {{CN}}
 
@@ -17,9 +14,7 @@ import BasicDemoCode from '!raw-loader!./demo/basic';
 
 #### 基本使用
 
-<CodeBox code={BasicDemoCode} title="" desc="">
-  <BasicDemo></BasicDemo>
-</CodeBox>
+<code src="./demo/basic.tsx"></code>
 
 
 ### API

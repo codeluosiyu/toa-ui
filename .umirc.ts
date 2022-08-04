@@ -1,8 +1,7 @@
 import { defineConfig } from 'dumi';
 
-// 此处更换为自己的仓库名
-let base: any = '/react-ui-library-tutorial';
-let publicPath: any = '/react-ui-library-tutorial/';
+let base: any = '/toa-ui';
+let publicPath: any = '/toa-ui/';
 
 if (process.env.SITE_BUILD_ENV === 'PREVIEW') {
     base = undefined;
@@ -10,7 +9,7 @@ if (process.env.SITE_BUILD_ENV === 'PREVIEW') {
 }
 
 export default defineConfig({
-    title: 'Happy UI',
+    title: 'Toa UI',
     mode: 'site',
     outputPath: 'doc-site',
     exportStatic: {},
