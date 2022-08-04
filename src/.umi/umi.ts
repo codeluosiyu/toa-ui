@@ -25,7 +25,11 @@ const getClientRender = (args: { hot?: boolean; routes?: any[] } = {}) => plugin
         isServer: process.env.__IS_SERVER,
         dynamicImport: true,
         rootElement: 'root',
+<<<<<<< HEAD
         defaultTitle: `Toa UI`,
+=======
+        defaultTitle: `Happy UI`,
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
       },
     });
     return renderClient(opts);

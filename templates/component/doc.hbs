@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: {{pascalCase name}} {{CN}}
 route: /components/{{kebabCase name}}
 group:
@@ -6,6 +7,18 @@ group:
   order: 1
 ---
 
+=======
+name: {{pascalCase name}} {{CN}}
+route: /components/{{kebabCase name}}
+menu: 组件
+---
+
+import CodeBox from '../../doc-comps/happy-box';
+
+import BasicDemo from './demo/basic';
+import BasicDemoCode from '!raw-loader!./demo/basic';
+
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
 ## {{pascalCase name}} {{CN}}
 
 {{description}}
@@ -14,7 +27,13 @@ group:
 
 #### 基本使用
 
+<<<<<<< HEAD
 <code src="./demo/basic.tsx"></code>
+=======
+<CodeBox code={BasicDemoCode} title="" desc="">
+  <BasicDemo></BasicDemo>
+</CodeBox>
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
 
 
 ### API

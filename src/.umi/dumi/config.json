@@ -1,15 +1,22 @@
 {
   "menus": {
     "en-US": {
+<<<<<<< HEAD
       "/components": [
         {
           "title": "基础组件",
+=======
+      "/alert": [
+        {
+          "title": "反馈",
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
           "meta": {
             "order": 1,
             "__fallback": true
           },
           "children": [
             {
+<<<<<<< HEAD
               "path": "/components/alert",
               "title": "Alert 警告提示",
               "meta": {}
@@ -28,6 +35,11 @@
               "path": "/components/scroll",
               "title": "Scroll Scroll",
               "meta": {}
+=======
+              "path": "/alert",
+              "title": "Alert 警告提示",
+              "meta": {}
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
             }
           ]
         }
@@ -52,11 +64,19 @@
       {
         "title": "组件",
         "order": 2,
+<<<<<<< HEAD
         "path": "/components"
       }
     ]
   },
   "title": "Toa UI",
+=======
+        "path": "/alert"
+      }
+    ]
+  },
+  "title": "Happy UI",
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
   "mode": "site",
   "repository": {
     "url": "",

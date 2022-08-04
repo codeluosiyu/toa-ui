@@ -1,6 +1,7 @@
 // @ts-nocheck
 import React from 'react';
 import { dynamic } from 'dumi';
+<<<<<<< HEAD
 import rawCode1 from '!!dumi-raw-code-loader!F:/github/new_components/toa/src/components/alert/demo/basic.tsx?dumi-raw-code';
 import rawCode2 from '!!dumi-raw-code-loader!F:/github/new_components/toa/src/components/alert/index.tsx?dumi-raw-code';
 import rawCode3 from '!!dumi-raw-code-loader!F:/github/new_components/toa/src/components/alert/style/index.ts?dumi-raw-code';
@@ -17,15 +18,26 @@ import rawCode13 from '!!dumi-raw-code-loader!F:/github/new_components/toa/src/c
 import rawCode14 from '!!dumi-raw-code-loader!F:/github/new_components/toa/src/components/scroll/index.ts?dumi-raw-code';
 import rawCode15 from '!!dumi-raw-code-loader!F:/github/new_components/toa/src/components/scroll/interface.ts?dumi-raw-code';
 import rawCode16 from '!!dumi-raw-code-loader!F:/github/new_components/toa/src/components/scroll/scroll.tsx?dumi-raw-code';
+=======
+import rawCode1 from '!!dumi-raw-code-loader!F:/github/new_components/toa/src/alert/demo/basic.tsx?dumi-raw-code';
+import rawCode2 from '!!dumi-raw-code-loader!F:/github/new_components/toa/src/alert/index.tsx?dumi-raw-code';
+import rawCode3 from '!!dumi-raw-code-loader!F:/github/new_components/toa/src/alert/style/index.ts?dumi-raw-code';
+import rawCode4 from '!!dumi-raw-code-loader!F:/github/new_components/toa/src/alert/style/index.less?dumi-raw-code';
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
 
 export default {
   'alert-basic': {
     component: dynamic({
+<<<<<<< HEAD
       loader: async () => (await import(/* webpackChunkName: "demos_trela" */'F:/github/new_components/toa/src/components/alert/demo/basic.tsx')).default,
+=======
+      loader: async () => (await import(/* webpackChunkName: "demos_trela" */'F:/github/new_components/toa/src/alert/demo/basic.tsx')).default,
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
       loading: () => null,
     }),
     previewerProps: {"sources":{"_":{"tsx":rawCode1},"index.tsx":{"import":"./../index","content":rawCode2},"style/index.ts":{"import":"../style","content":rawCode3},"style/index.less":{"import":"./index.less","content":rawCode4}},"dependencies":{"react":{"version":"18.2.0"},"prop-types":{"version":"15.8.1"}},"componentName":"alert","identifier":"alert-basic"},
   },
+<<<<<<< HEAD
   'button-basic': {
     component: dynamic({
       loader: async () => (await import(/* webpackChunkName: "demos_no_comp" */'F:/github/new_components/toa/src/components/button/demo/basic.tsx')).default,
@@ -47,4 +59,6 @@ export default {
     }),
     previewerProps: {"sources":{"_":{"tsx":rawCode13},"index.ts":{"import":"../","content":rawCode14},"interface.ts":{"import":"./interface","content":rawCode15},"scroll.tsx":{"import":"./scroll","content":rawCode16}},"dependencies":{"react":{"version":"18.2.0"}},"identifier":"scroll-basic"},
   },
+=======
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
 };

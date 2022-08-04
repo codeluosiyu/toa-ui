@@ -63,17 +63,27 @@ export function getRoutes() {
     "wrappers": [dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'../dumi/layout')}), dynamic({ loader: () => import(/* webpackChunkName: 'wrappers' */'F:/github/new_components/toa/node_modules/dumi-theme-default/es/layout.js')})],
     "routes": [
       {
+<<<<<<< HEAD
         "path": "/components/alert",
         "component": dynamic({ loader: () => import(/* webpackChunkName: 'components__alert__index.md' */'F:/github/new_components/toa/src/components/alert/index.md')}),
         "exact": true,
         "meta": {
           "filePath": "src/components/alert/index.md",
           "updatedTime": 1659503848492,
+=======
+        "path": "/alert",
+        "component": dynamic({ loader: () => import(/* webpackChunkName: 'alert__index.md' */'F:/github/new_components/toa/src/alert/index.md')}),
+        "exact": true,
+        "meta": {
+          "filePath": "src/alert/index.md",
+          "updatedTime": 1659410289416,
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
           "componentName": "alert",
           "title": "Alert 警告提示",
           "nav": {
             "title": "组件",
             "order": 2,
+<<<<<<< HEAD
             "path": "/components"
           },
           "group": {
@@ -81,6 +91,15 @@ export function getRoutes() {
             "order": 1,
             "__fallback": true,
             "path": "/components/alert"
+=======
+            "path": "/alert"
+          },
+          "group": {
+            "title": "反馈",
+            "order": 1,
+            "__fallback": true,
+            "path": "/alert"
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
           },
           "slugs": [
             {
@@ -106,6 +125,7 @@ export function getRoutes() {
           ],
           "hasPreviewer": true
         },
+<<<<<<< HEAD
         "title": "Alert 警告提示 - Toa UI"
       },
       {
@@ -242,6 +262,9 @@ export function getRoutes() {
           }
         },
         "title": "Scroll Scroll - Toa UI"
+=======
+        "title": "Alert 警告提示 - Happy UI"
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
       },
       {
         "path": "/",
@@ -249,7 +272,11 @@ export function getRoutes() {
         "exact": true,
         "meta": {
           "filePath": "docs/index.md",
+<<<<<<< HEAD
           "updatedTime": 1659504330287,
+=======
+          "updatedTime": 1659439948257,
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
           "title": "Toa UI",
           "hero": {
             "title": "Toa UI",
@@ -257,7 +284,11 @@ export function getRoutes() {
             "actions": [
               {
                 "text": "快速上手",
+<<<<<<< HEAD
                 "link": "/quick"
+=======
+                "link": "/getting-started"
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
               }
             ]
           },
@@ -265,16 +296,25 @@ export function getRoutes() {
             {
               "icon": "https://gw.alipayobjects.com/zos/bmw-prod/881dc458-f20b-407b-947a-95104b5ec82b/k79dm8ih_w144_h144.png",
               "title": "特性 1",
+<<<<<<< HEAD
               "desc": "<div class=\"markdown\"><p>渲染最快的组件库</p></div>"
+=======
+              "desc": "<div class=\"markdown\"><p>Balabala</p></div>"
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
             },
             {
               "icon": "https://gw.alipayobjects.com/zos/bmw-prod/d60657df-0822-4631-9d7c-e7a869c2f21c/k79dmz3q_w126_h126.png",
               "title": "特性 2",
+<<<<<<< HEAD
               "desc": "<div class=\"markdown\"><p>国内最全的互动游戏组件</p></div>"
+=======
+              "desc": "<div class=\"markdown\"><p>Balabala</p></div>"
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
             },
             {
               "icon": "https://gw.alipayobjects.com/zos/bmw-prod/d1ee0c6f-5aed-4a45-a507-339a4bfe076c/k7bjsocq_w144_h144.png",
               "title": "特性 3",
+<<<<<<< HEAD
               "desc": "<div class=\"markdown\"><p>动画组件支持面最广</p></div>"
             }
           ],
@@ -293,6 +333,18 @@ export function getRoutes() {
       }
     ],
     "title": "Toa UI",
+=======
+              "desc": "<div class=\"markdown\"><p>Balabala</p></div>"
+            }
+          ],
+          "footer": "<div class=\"markdown\"><p>Open-source MIT Licensed | Copyright © 2020<br />Powered by <a href=\"https://d.umijs.org/\" target=\"_blank\">dumi<svg xmlns=\"http://www.w3.org/2000/svg\" aria-hidden=\"\" x=\"0px\" y=\"0px\" viewBox=\"0 0 100 100\" width=\"15\" height=\"15\" class=\"__dumi-default-external-link-icon\"><path fill=\"currentColor\" d=\"M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z\"></path><polygon fill=\"currentColor\" points=\"45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9\"></polygon></svg></a></p></div>",
+          "slugs": []
+        },
+        "title": "Toa UI - Happy UI"
+      }
+    ],
+    "title": "Happy UI",
+>>>>>>> 3968ddb6d71f1e972ba42c3db2e0a1297c05518e
     "component": (props) => props.children
   }
 ];
